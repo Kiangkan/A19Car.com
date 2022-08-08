@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url("../../assets/fonts/MaterialIcons-Regular.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../../assets/fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf")
+}
+@font-face {
+    font-family: "Battambang";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../../assets/fonts/Battambang/Battambang-Regular.ttf")
+}
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    vertical-align: middle;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'liga';
+}
+* { box-sizing: border-box; }
+:root {
+    --mdc-typography-font-family: "Open Sans", "Battambang";
+}
+html {
+    line-height: 1.5;
+    font-family: "Open Sans", "Battambang";;
+}
+html, body, #main {
+    height: 100%;
+}
+body {
+    margin: 0;
+}
+h1 {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 0;
+}
+#main, .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-wrapper {
+    width: 188px;
+}
+.logo-wrapper img {
+    max-inline-size: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+.login-container {
+    width: 368px;
+    box-shadow: 0 2px 16px rgba(0 0 0 / 20%);
+    border-radius: 8px;
+    padding: 16px;
+    /* border: 1px solid red; */
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 16px;
+}
+.form-action {
+    display: flex;
+    justify-content: flex-end;
+}
+.mdc-text-field {
+    width: 100%;
+}
+.mdc-floating-label {
+    line-height: 1.5;
+}
+.mdc-button {
+    line-height: 2;
+}

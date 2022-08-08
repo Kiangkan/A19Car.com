@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A19-Car.com Admin</title>
+    <link rel="stylesheet" href="./assets/material/material-components-web.min.css">
+    <script src="./assets/material/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/app.css">
+</head>
+<body>
+    <!-- WRITE START -->
+    <aside id="drawer" class="mdc-drawer mdc-drawer--dismissible">
+        <div class="mdc-drawer__content">
+            <div class="items-center">
+                <img id="drawer-logo" width="126" src="./assets/images/logo.png" alt="logo">
+            </div>
+            <div class="mdc-list">
+                <a class="mdc-list-item mdc-list-item--activated mdc-theme--on-primary" href="#" aria-current="page">
+                    <span class="mdc-list-item__ripple"></span>
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">dashboard</i>
+                    <span class="mdc-list-item__text">គ្រប់គ្រងទិនន្ន័យ</span>
+                </a>
+                <a class="mdc-list-item" href="./cars.html">
+                    <span class="mdc-list-item__ripple"></span>
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">directions_car</i>
+                    <span class="mdc-list-item__text">គ្រប់គ្រងរថយន្ត</span>
+                </a>
+                <a class="mdc-list-item" href="./accessories.html">
+                    <span class="mdc-list-item__ripple"></span>
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">construction</i>
+                    <span class="mdc-list-item__text">គ្រប់គ្រងគ្រឿងបន្លាស់</span>
+                </a>
+                <a class="mdc-list-item" href="./companies.html">
+                    <span class="mdc-list-item__ripple"></span>
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">apartment</i>
+                    <span class="mdc-list-item__text">គ្រប់គ្រងក្រុមហ៊ុនផ្គត់ផ្គង់</span>
+                </a>
+                <a class="mdc-list-item" href="./orders.html">
+                    <span class="mdc-list-item__ripple"></span>
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">grade</i>
+                    <span class="mdc-list-item__text">គ្រប់គ្រងបញ្ជីការបញ្ជាទិញ</span>
+                </a>
+                <a class="mdc-list-item" href="./users.html">
+                    <span class="mdc-list-item__ripple"></span>
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">person</i>
+                    <span class="mdc-list-item__text">គ្រប់គ្រងអ្ន​កប្រើប្រាស់</span>
+                </a>
+                <a class="mdc-list-item" href="./admin.html">
+                    <span class="mdc-list-item__ripple"></span>
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">manage_accounts</i>
+                    <span class="mdc-list-item__text">អ្ន​កគ្រប់គ្រង</span>
+                </a>
+            </div>
+        </div>
+    </aside>
+    
+    <div class="mdc-drawer-app-content">
+        <header class="mdc-top-app-bar app-bar" id="app-bar">
+            <div class="mdc-top-app-bar__row">
+                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                    <button onclick="toggleDrawer()" class="material-icons mdc-theme--primary-bg mdc-top-app-bar__navigation-icon mdc-icon-button">
+                        <div class="mdc-icon-button__ripple"></div>
+                        menu
+                    </button>
+                    <span class="mdc-top-app-bar__title">គ្រប់គ្រងទិនន្ន័យ</span>
+                </section>
+                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+                    <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button  mdc-theme--primary-bg" aria-label="Notifications">
+                        <div class="mdc-icon-button__ripple"></div>
+                        notifications
+                    </button>
+                    <div class="user-header">
+                        <div class="avatar">
+                            <img src="./assets/images/user/9bde95ba-7016-4cbd-b7a8-53c66a5656e3.jpeg">
+                        </div>
+                        <div class="mdc-menu-surface--anchor">
+                            <button onclick="openUserMenu()" class="mdc-button mdc-theme--on-primary">
+                                <span class="mdc-button__ripple"></span>
+                                <span class="mdc-button__touch"></span>
+                                <span class="mdc-button__label">កាន គាំង</span>
+                                <i class="material-icons">arrow_drop_down</i>
+                            </button>
+                            <div class="mdc-menu mdc-menu-surface" id="user-menu">
+                                <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
+                                  <li>
+                                    <div class="mdc-menu__selection-group">
+                                        <a href="./login.html" class="mdc-list-item" role="menuitem">
+                                            <span class="mdc-list-item__ripple"></span>
+                                            <span class="mdc-list-item__graphic material-icons mr-1">
+                                                logout
+                                            </span>
+                                            <span class="mdc-list-item__text nowrap">ចាកចេញ</span>
+                                        </a>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </header>
+    
+        <main class="main-content" id="main">
+            
+            
+        </main>
+    </div>
+    <!-- WRITE END-->
+    <script src="./assets/javascripts/app.js"></script>
+</body>
+</html>
