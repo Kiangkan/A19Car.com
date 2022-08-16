@@ -11,20 +11,21 @@ function init() {
     // userMenu.open = true;
     drawer = MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
     drawer.open = true;
-    const list = MDCList.attachTo(document.querySelector('.mdc-list'));
-    list.wrapFocus = true;
-    for (const listEl of list.listElements) {
-        MDCRipple.attachTo(listEl);
-    }
+    // const list = MDCList.attachTo(document.querySelector('.mdc-list'));
+    // list.wrapFocus = true;
+    // for (const listEl of list.listElements) {
+    //     MDCRipple.attachTo(listEl);
+    // }
     initAllMaterialButton();
     initAllMaterialIconButton();
     initAllMateralTextField();
-    initAllMateralList();
+    initMDCCheckbox();
     initAllMateralChips();
     initMDCMenu();
     initMDCSelect();
     initSwitch();
     initRadioButton();
+    initAllMateralList();
 }
 
 function initAllMateralTextField() {
@@ -90,6 +91,14 @@ function initMDCMenu() {
     for (const menu of menus) {
         MDCMenu.attachTo(menu);
     }
+}
+
+function initMDCCheckbox() {
+    const checkboxs = document.querySelectorAll(".mdc-checkbox");
+    for (let checkbox of checkboxs) {
+        new mdc.checkbox.MDCCheckbox(checkbox);
+    }
+// const checkbox = new MDCCheckbox(document.querySelector('.mdc-checkbox'));
 }
 
 function toggleDrawer() {
